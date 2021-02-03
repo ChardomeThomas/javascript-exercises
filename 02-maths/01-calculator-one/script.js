@@ -14,17 +14,33 @@
 
     document.getElementById("addition").addEventListener("click", function() {
         // perform an addition
+        var valeur1=  document.getElementById("op-one").value;
+        var valeur2=  document.getElementById("op-two").value;
+        var res= parseFloat(valeur1) + parseFloat(valeur2);
+      alert(res);
     });
 
     document.getElementById("substraction").addEventListener("click", function() {
         // perform an substraction
+        var valeur1=  document.getElementById("op-one").value;
+        var valeur2=  document.getElementById("op-two").value;
+        var res= valeur1-valeur2;
+      alert(res);
     });
 
     document.getElementById("multiplication").addEventListener("click", function() {
         // perform an multiplication
+        var valeur1=  document.getElementById("op-one").value;
+        var valeur2=  document.getElementById("op-two").value;
+        var res= valeur1*valeur2;
+      alert(res);
     });
 
     document.getElementById("division").addEventListener("click", function() {
         // perform an division
+        var valeur1=  document.getElementById("op-one").value;
+        var valeur2=  document.getElementById("op-two").value;
+        var res= valeur1/valeur2;
+      alert(res);
     });
 })();
