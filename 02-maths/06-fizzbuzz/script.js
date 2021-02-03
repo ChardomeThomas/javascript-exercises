@@ -10,7 +10,30 @@
 // You will have time to focus on it later.
 
 (function() {
+ var cpt = 1;
 
+ while(cpt<=100){
+if (cpt%3==0 && cpt %5==0){
+console.log("fizzbuzz");
+}
+else{
+   if (cpt%3 == 0)
+   {
+   console.log("fizz");
+ }
+ else{
+   if (cpt%5 ==0)
+   {
+   console.log("buzz");
+}
+ else{
+   
+  console.log(cpt);
+}
+}
+}
+cpt++;
+ }
     // your code here
 
 })();
