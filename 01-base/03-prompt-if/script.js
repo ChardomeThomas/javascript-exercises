@@ -12,5 +12,11 @@
 (function() {
 
   // your code here
-
+var answer = prompt("do you want some cake?");
+if (answer == "yes")
+{
+  alert("congratulation");
+}else{
+  alert("more cake from me then !");
+}
 })();
