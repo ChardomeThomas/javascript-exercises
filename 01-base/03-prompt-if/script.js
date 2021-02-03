@@ -10,10 +10,9 @@
 // You will have time to focus on it later.
 
 (function() {
-
   // your code here
 var answer = prompt("do you want some cake?");
-if (answer == "yes")
+if (answer == "yes" || answer == "Yes" || answer == "YEs" || answer == "YES" || answer == "yEs" || answer == "yES" || answer == "yeS")
 {
   alert("congratulation");
 }else{

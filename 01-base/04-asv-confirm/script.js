@@ -23,9 +23,7 @@
       {
         cond = true;
       }
-      else{
-cond = false;
-      }
+
 
 
 
