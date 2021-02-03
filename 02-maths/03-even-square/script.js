@@ -14,6 +14,18 @@
     document.getElementById("run").addEventListener("click", function() {
 
         // your code here
+        var i = 1;
+        var nb;
+        var div;
+        while (i<22){
+          div = i%2;
+          if(div == 0){
+          nb = Math.pow(i,2);
+            document.write(nb);
+            document.write("\n");
+            }
+            i++;
+        }
 
     });
 

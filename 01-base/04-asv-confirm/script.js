@@ -13,19 +13,12 @@
 
     // your code here
 
-    var cond = false;
-    while (cond == false){
+    var correct = false;
+    while (correct == false){
       var Age = prompt("Enter your age");
       var Gender = prompt("Enter your gender");
       var Town = prompt("Enter the town where you live");
-      var cor = confirm("age: " + Age + "gender: " + Gender + " town: " + Town);
-      if (cor == true)
-      {
-        cond = true;
-      }
-
-
-
+      correct = confirm("age: " + Age + " gender: " + Gender + " town: " + Town);
 
 
     }
