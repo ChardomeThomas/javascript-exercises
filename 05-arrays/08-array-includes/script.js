@@ -27,5 +27,12 @@
     ];
 
     // your code here
+      document.getElementById("run").addEventListener("click", function() {
+      
+      fruits.forEach(function(item, index, fruits) {
+      console.log(fruits.includes('apple'));
+
+    });
+    });
 
 })();

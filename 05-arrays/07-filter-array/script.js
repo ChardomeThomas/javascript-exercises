@@ -90,5 +90,18 @@
     ];
 
     // your code here
+    var tab=[];
+    var cpt = 0;
+    document.getElementById("run").addEventListener("click", function() {
+      people.forEach(function(item, index, people) {
+        if (people[index].age>18){
+          tab[cpt] = people[index];
+          cpt++
+        }
+      });
+        tab.forEach(function(item, index, tab) {
+          console.log(item);
+          });
+    });
 
 })();
