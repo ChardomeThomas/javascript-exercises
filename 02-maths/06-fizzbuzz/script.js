@@ -13,7 +13,7 @@
  var cpt = 1;
 
  while(cpt<=100){
-if (cpt%3==0 && cpt %5==0){
+if (cpt%3==0 && cpt%5==0){
 console.log("fizzbuzz");
 }
 else{
@@ -27,7 +27,7 @@ else{
    console.log("buzz");
 }
  else{
-   
+
   console.log(cpt);
 }
 }

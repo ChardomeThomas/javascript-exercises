@@ -15,4 +15,17 @@
 
     // your code here
 
+
+
+
+    var today = new Date();
+    var month = today.toLocaleString('en-EN', { month: 'long' });
+    var weekday = today.toLocaleString('en-EN', { weekday: 'long' });
+    var day = today.getDate();
+    var hour = today.getHours();
+    var min = today.getMinutes();
+    var year = today.getFullYear();
+
+    document.getElementById("target").innerHTML = weekday +" "+ day + " " + month + " " + year + ", " + hour +"h"+min;
+
 })();

@@ -13,4 +13,24 @@
 
     // your code here
 
+    document.getElementById("run").addEventListener("click", function() {
+      var date = new Date();
+      var yearN= date.getFullYear();
+      var monthN = date.getMonth()+1;
+      var dayN = date.getDate();
+      var dob_year= document.getElementById("dob-year").value;
+      var dob_day= document.getElementById("dob-day").value;
+      var dob_month= document.getElementById("dob-month").value;
+      var age = yearN - dob_year;
+      if(monthN < dob_month){
+        age --;
+      }
+      else{
+        if(monthN == dob_month && dayN < dob_day ){
+          age--;
+        }
+      }
+      alert(age);
+    });
+
 })();
