@@ -29,13 +29,15 @@
   ];
 
   // your code here
-  var tableauSansDoublon = fruits.reduce(function (acc, valCourante) {
-    if(acc.indexOf(valCourante) === -1) {
-      acc.push(valCourante);
-    }
-    return acc
-  }, []);
+//  var tableauSansDoublon = fruits.reduce(function (acc, valCourante) {
+//    if(acc.indexOf(valCourante) === -1) {
+//      acc.push(valCourante);
+//    }
+//    return acc
+//  }, []);
 
-  console.log(tableauSansDoublon)
+//  console.log(tableauSansDoublon)
 
+  let unique = [...new Set(fruits)];
+  console.log(unique);
 })();

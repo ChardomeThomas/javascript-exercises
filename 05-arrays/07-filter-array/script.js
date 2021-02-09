@@ -90,18 +90,22 @@
     ];
 
     // your code here
-    var tab=[];
-    var cpt = 0;
-    document.getElementById("run").addEventListener("click", function() {
-      people.forEach(function(item, index, people) {
-        if (people[index].age>18){
-          tab[cpt] = people[index];
-          cpt++
-        }
-      });
-        tab.forEach(function(item, index, tab) {
-          console.log(item);
-          });
-    });
-
+  //  var tab=[];
+  //  var cpt = 0;
+  //  document.getElementById("run").addEventListener("click", function() {
+  //    people.forEach(function(item, index, people) {
+  //      if (people[index].age>18){
+  //        tab[cpt] = people[index];
+  //        cpt++
+  //      }
+  //    });
+  //      tab.forEach(function(item, index, tab) {
+  //        console.log(item);
+  //        });
+  //  });
+  document.getElementById("run").addEventListener("click", function() {
+        var result = people.filter(people => people.age > 18);
+      console.log(result);
+  
+   });
 })();
