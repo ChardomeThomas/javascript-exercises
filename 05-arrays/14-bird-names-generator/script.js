@@ -39,4 +39,20 @@
     ]);
 
     // your code here
+    document.getElementById("run").addEventListener("click", function() {
+      var index1 = Math.floor(Math.random() * 12) ;
+      var index2 =  Math.floor(Math.random() * 11);
+      var test = birds[index1];
+      var test2 = [...adjectives];
+
+      if (birds[index1].fem == true){
+        console.log(`La ${test.name} ${test2[index2]}e`);
+
+      }
+      else{
+        console.log(`Le ${test.name} ${test2[index2]}`);
+      }
+
+    });
+
 })();
