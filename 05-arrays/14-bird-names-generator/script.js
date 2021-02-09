@@ -46,11 +46,13 @@
       var test2 = [...adjectives];
 
       if (birds[index1].fem == true){
-        console.log(`La ${test.name} ${test2[index2]}e`);
+        document.getElementById("target").innerHTML = `La ${test.name} ${test2[index2]}e`;
+
 
       }
       else{
-        console.log(`Le ${test.name} ${test2[index2]}`);
+        document.getElementById("target").innerHTML = `La ${test.name} ${test2[index2]}e`;
+
       }
 
     });
