@@ -1,14 +1,24 @@
 /* becode/javascript
- *
- * /06-objects/01-generate-object/script.js - 6.1: générer un object
- *
- * coded by leny@BeCode
- * started at 08/05/2019
- */
+*
+* /06-objects/01-generate-object/script.js - 6.1: générer un object
+*
+* coded by leny@BeCode
+* started at 08/05/2019
+*/
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+  // your code here
+  var person = new Object();
+
+  person.firstname = "Thomas";
+  person.lastname = "Chardome";
+  person.age = "27";
+  person.city = "Libramont";
+  person.country = "Belgium"
+  document.getElementById("run").addEventListener("click", function() {
+    console.log(person.firstname + " " +person.lastname + " "+person.age+" "+ person.city +" "+person.country);
+  });
 })();

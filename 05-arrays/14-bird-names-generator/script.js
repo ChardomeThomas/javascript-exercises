@@ -51,7 +51,7 @@
 
       }
       else{
-        document.getElementById("target").innerHTML = `La ${test.name} ${test2[index2]}e`;
+        document.getElementById("target").innerHTML = `Le ${test.name} ${test2[index2]}`;
 
       }
 
