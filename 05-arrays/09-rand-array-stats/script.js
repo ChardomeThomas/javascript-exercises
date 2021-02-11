@@ -13,14 +13,14 @@
   var tab = [];
   var cpt = 0;
   var taille;
-  while (cpt<10){
-    tab[cpt] = Math.floor(Math.random() * 100) + 1;
-    cpt++;
-  }
+
 
   // your code here
   document.getElementById("run").addEventListener("click", function() {
-
+    while (cpt<10){
+      tab[cpt] = Math.floor(Math.random() * 100) + 1;
+      cpt++;
+    }
     tab.forEach(function(item, index, tab) {
       var add =  document.getElementById("n-"+(index+1));
       add.innerHTML = item;

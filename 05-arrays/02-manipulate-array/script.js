@@ -25,13 +25,13 @@
   ];
 
   // your code here
-  var first = fruits.shift(); //supprime le premier élément du tableau
-  var newLength = fruits.unshift('banana') // ajoute banana au début
-  var last = fruits.pop(); // supprime cerise (à la fin)
-  var newLength = fruits.push('kiwi'); //ajoute kiwi à la fin
+
   document.getElementById("run").addEventListener("click", function() {
-    fruits.forEach(function(item, fruits) {
-      console.log(item);
-    });
+    var first = fruits.shift(); //supprime le premier élément du tableau
+    var newLength = fruits.unshift('banana') // ajoute banana au début
+    var last = fruits.pop(); // supprime cerise (à la fin)
+    var newLength = fruits.push('kiwi'); //ajoute kiwi à la fin
+    console.log(fruits);
+
   });
 })();

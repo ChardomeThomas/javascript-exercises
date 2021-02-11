@@ -12,5 +12,9 @@
 (function() {
 
     // your code here
-
+var x;
+x = document.querySelectorAll(".target");  //afin de prendre le nombre d'element de target dans la variable
+    for (i=0; i< x.length; i++){
+  x[i].innerHTML = "owned";
+  }
 })();
