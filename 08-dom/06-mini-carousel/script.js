@@ -22,8 +22,6 @@
     // your code here
 var counter = 0;
    document.getElementById("next").addEventListener("click", function() {
-
-
      let img = document.querySelector('img');
      let start = img.src;
      img.src = gallery[counter];

@@ -13,7 +13,7 @@
 
     // your code here
     document.getElementById("run").addEventListener("click", function() {
-    var col= '#'+Math.floor(Math.random()*16777215).toString(16);
+    var col= '#'+Math.floor(Math.random()*16777215).toString(16);  //16777215 = 256 * 256 * 256, tostring16 pour convertir en hexa
     document.body.style.backgroundColor = col;
     });
 })();
