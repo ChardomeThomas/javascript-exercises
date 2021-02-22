@@ -20,6 +20,7 @@
           let td = document.createElement('td');
           tr.appendChild(td);
           table.appendChild(tr);
+          tr.appendChild(td).innerHTML = "ligne" + (i+1);
       }
 
 })();
