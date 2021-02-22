@@ -20,5 +20,6 @@
   person.country = "Belgium"
   document.getElementById("run").addEventListener("click", function() {
     console.log(person.firstname + " " +person.lastname + " "+person.age+" "+ person.city +" "+person.country);
+
   });
 })();

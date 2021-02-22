@@ -12,5 +12,16 @@
 (function() {
 
     // your code here
+    let table = document.createElement('table');
+    document.getElementById('target').appendChild(table);
+
+    for (let i=1; i<11; i++){
+      let tr = document.createElement('tr');
+      document.querySelector('table').appendChild(tr);
+      for (let cpt=1; cpt < 11; cpt++){
+        let td = document.createElement('td');
+        tr.appendChild(td).innerHTML = i * cpt;
+      }
+    }
 
 })();
