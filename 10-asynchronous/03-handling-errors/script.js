@@ -11,4 +11,14 @@
 
 (() => {
     // your code here
+    document.querySelector("#run").addEventListener("click", function(){
+     window.lib.getPersons(function(error,array){
+       if (error){
+         console.error(error);
+       }
+       else{
+         console.log(array);
+       }
+   });
+ });
 })();

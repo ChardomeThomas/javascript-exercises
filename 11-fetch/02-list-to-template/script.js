@@ -1,14 +1,33 @@
 /* becode/javascript
- *
- * /09-fetch/02-list-to-template/script.js - 11.2: liste vers template
- *
- * coded by leny@BeCode
- * started at 12/05/2019
- */
+*
+* /09-fetch/02-list-to-template/script.js - 11.2: liste vers template
+*
+* coded by leny@BeCode
+* started at 12/05/2019
+*/
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+  // your code here
+  const template = document.querySelector("#tpl-hero");
+  const target = document.querySelector("#target");
+
+  document.getElementById('run').addEventListener('click', function (){
+
+    async function heroes(){
+      const heroesFetch = await fetch('http://localhost:3000/heroes');
+      const data = await heroesFetch.json();
+
+      data.forEach(({ name, alterEgo, abilities}) => {
+        const superH = template.cloneNode(true).content;
+        superH.querySelector(".name").textContent = name;
+        superH.querySelector(".alter-ego").textContent = alterEgo;
+        superH.querySelector(".powers").textContent = abilities;
+        target.appendChild(superH);
+      });
+    }
+    heroes();
+  });
 })();

@@ -16,9 +16,5 @@
   image.src = document.querySelector("#source").getAttribute("data-image");
   document.querySelector("#target").appendChild(image);
   document.querySelector("#source").remove();
-console.log(image);
-  // let a = document.querySelector("#source').getAttribute("data-image');
-  // let image = document.createElement("img');
-  // image.setAttribute("src',a);
-  // document.querySelector("#target').appendChild(image);
+
 })();

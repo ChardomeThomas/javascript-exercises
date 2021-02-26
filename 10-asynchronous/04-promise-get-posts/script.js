@@ -11,4 +11,12 @@
 
 (() => {
     // your code here
+    document.querySelector("#run").addEventListener("click", function(){
+      const promise = window.lib.getPosts((resolve, reject) =>{
+
+      });
+      promise.then((value) => {
+        console.log(value);
+});
+ });
 })();

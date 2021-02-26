@@ -18,7 +18,6 @@
       for (let i = 0; i < 10; i++) {
           let tr = document.createElement('tr');
           let td = document.createElement('td');
-          tr.appendChild(td);
           table.appendChild(tr);
           tr.appendChild(td).innerHTML = "ligne" + (i+1);
       }
